@@ -1,0 +1,18 @@
+.loginForm {
+    margin: 50px auto;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.loginForm h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+}

@@ -1,0 +1,99 @@
+.gameBoard {
+    width: 480px;
+    height: 480px;
+    margin: 10px auto 40px;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box {
+    border: 2px solid #000;
+    width: calc(33% - 4px);
+    height: calc(33% - 4px);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7rem;
+    line-height: 150%;
+    font-weight: 700;
+}
+.scores {
+    max-width: 480px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+.scoresBlock {
+    width: 40%;
+    background: #fff;
+    padding: 10px;
+    transition: all .3s;
+}
+.scoresBlock__active {
+    background: #74FF5C;
+    box-shadow: 0 0 5px rgba(116, 255, 92, .3);
+}
+.scoresBlock__header {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.scoresBlock__header span {
+    font-weight: 700;
+    color: #ff0000;
+}
+.scoresBlock p {
+    margin: 0 0 5px;
+    font-size: 12px;
+}
+.scoresBlock p span {
+    font-weight: 700;
+}
+.winLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    opacity: 0;
+    transform-origin: 0 0;
+    background: #ff0000;
+    transition: all .5s;
+}
+.winText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show {
+    visibility: visible;
+    z-index: 3;
+}
+
+.btnGroup {
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.btnGroup__btn {
+    max-width: 200px;
+}
